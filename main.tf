@@ -18,7 +18,7 @@ module "rds" {
   source = "./modules/rds"
   vpc_id = module.vpc.vpc_id
   subnet_ids= [module.vpc.private_subnet_id,module.vpc.rds_subnet_id]
-  security_groups= module.private.private_sg_id
+  private_sg_id= module.private.private_sg_id
 }
 
 

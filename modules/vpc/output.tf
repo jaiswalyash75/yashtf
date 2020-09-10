@@ -7,7 +7,7 @@ output "rds_subnet_id" {
 }
 
 output "private_subnet_id" {
-  value = aws_subnet.us-east-1a-private-ec2.id
+  value = aws_subnet.us-east-1b-private-ec2.id
 }
 
 output "public_subnet_id" {

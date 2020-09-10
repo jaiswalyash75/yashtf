@@ -42,7 +42,7 @@ resource "aws_security_group" "server_private" {
 
 
 data "template_file" "init" {
-  template = file("./modules/vpc/start.sh.tpl")
+  template = file("./modules/private/start.sh.tpl")
 
   vars = {
     address = var.address
